@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 89be9a0 (finish this)
 type Holiday = "🎏" | "🪔" | "🎃" | "🎄" | "🎆";
@@ -66,4 +67,8 @@ export function CycleHoliday(): React.JSX.Element {
         </div>
     );
 >>>>>>> 89be9a0 (finish this)
+=======
+export function CycleHoliday(): React.JSX.Element {
+    return <div>Cycle Holiday</div>;
+>>>>>>> 1509083 (Initialize task-components)
 }

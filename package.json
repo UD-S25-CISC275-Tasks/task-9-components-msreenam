@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f534913 (please)
+=======
+>>>>>>> 1509083 (Initialize task-components)
 {
     "name": "react-typescript-starter",
     "homepage": "homepage",
@@ -11,8 +14,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f534913 (please)
+=======
+>>>>>>> 1509083 (Initialize task-components)
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/user-event": "^13.5.0",
         "@types/jest": "^27.5.2",
@@ -22,6 +28,7 @@
         "react-dom": "^18.3.1",
         "react-scripts": "5.0.1",
         "typescript": "^4.9.5",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         "@testing-library/jest-dom": "^5.16.1",
@@ -45,6 +52,8 @@
 >>>>>>> 6016326 (counter)
 =======
 >>>>>>> f534913 (please)
+=======
+>>>>>>> 1509083 (Initialize task-components)
         "web-vitals": "^2.1.4"
     },
     "scripts": {
@@ -52,6 +61,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "test:cov": "react-scripts test --coverage --watchAll",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "test:json": "react-scripts test --json --watchAll=false --outputFile jest-output.json --coverage",
 =======
@@ -73,6 +83,12 @@
 >>>>>>> 6016326 (counter)
 =======
 >>>>>>> f534913 (please)
+=======
+        "test:json": "react-scripts test --json --watchAll=false --outputFile jest-output.json --coverage",
+        "eject": "react-scripts eject",
+        "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
+        "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
+>>>>>>> 1509083 (Initialize task-components)
         "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}"
     },
     "eslintConfig": {
@@ -98,10 +114,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6016326 (counter)
 =======
 >>>>>>> f534913 (please)
+=======
+>>>>>>> 1509083 (Initialize task-components)
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@babel/plugin-transform-private-property-in-object": "^7.24.7",
         "@testing-library/dom": "^10.4.0",
@@ -124,6 +143,7 @@
         "ts-node": "^10.9.2"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
         "@types/react": "^19.0.10",
@@ -143,6 +163,8 @@
 >>>>>>> 6016326 (counter)
 =======
 >>>>>>> f534913 (please)
+=======
+>>>>>>> 1509083 (Initialize task-components)
     },
     "jest": {
         "collectCoverageFrom": [
@@ -155,6 +177,7 @@
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
@@ -162,3 +185,6 @@
 =======
 }
 >>>>>>> f534913 (please)
+=======
+}
+>>>>>>> 1509083 (Initialize task-components)

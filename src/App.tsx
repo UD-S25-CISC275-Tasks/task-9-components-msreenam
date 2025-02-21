@@ -5,16 +5,20 @@ import "./App.css";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 4c9dc24 (commit)
+=======
+>>>>>>> 1509083 (Initialize task-components)
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -49,12 +53,31 @@ function App(): React.JSX.Element {
 
 function App(): React.JSX.Element {
 >>>>>>> 95334ef (cojmit)
+=======
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
+
+function App(): React.JSX.Element {
+>>>>>>> 1509083 (Initialize task-components)
     return (
         <div className="App">
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
             <hr></hr>
+<<<<<<< HEAD
+=======
+            {/* <DoubleHalf></DoubleHalf> */}
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
+            <hr></hr>
+>>>>>>> 1509083 (Initialize task-components)
             <Counter></Counter>
             <hr />
             <RevealAnswer></RevealAnswer>
@@ -65,6 +88,7 @@ function App(): React.JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,6 +119,9 @@ function App(): React.JSX.Element {
 =======
             <CycleHoliday></CycleHoliday>
 >>>>>>> 95334ef (cojmit)
+=======
+            <CycleHoliday></CycleHoliday>
+>>>>>>> 1509083 (Initialize task-components)
         </div>
     );
 }

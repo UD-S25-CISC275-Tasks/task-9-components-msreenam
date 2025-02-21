@@ -16,6 +16,7 @@ import {
     changeQuestionTypeById,
     editOption,
 <<<<<<< HEAD
+<<<<<<< HEAD
     duplicateQuestionInArray
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -24,6 +25,9 @@ import {
 =======
     duplicateQuestionInArray,
 >>>>>>> 95334ef (cojmit)
+=======
+    duplicateQuestionInArray
+>>>>>>> 1509083 (Initialize task-components)
 } from "./nested";
 import testQuestionData from "./data/questions.json";
 import backupQuestionData from "./data/questions.json";
@@ -34,6 +38,7 @@ const {
     TRIVIA_QUESTIONS,
     EMPTY_QUESTIONS,
 <<<<<<< HEAD
+<<<<<<< HEAD
     SIMPLE_QUESTIONS_2
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -42,6 +47,9 @@ const {
 =======
     SIMPLE_QUESTIONS_2,
 >>>>>>> 95334ef (cojmit)
+=======
+    SIMPLE_QUESTIONS_2
+>>>>>>> 1509083 (Initialize task-components)
 }: Record<string, Question[]> =
     // Typecast the test data that we imported to be a record matching
     //  strings to the question list
@@ -54,6 +62,7 @@ const {
     TRIVIA_QUESTIONS: BACKUP_TRIVIA_QUESTIONS,
     EMPTY_QUESTIONS: BACKUP_EMPTY_QUESTIONS,
 <<<<<<< HEAD
+<<<<<<< HEAD
     SIMPLE_QUESTIONS_2: BACKUP_SIMPLE_QUESTIONS_2
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -62,6 +71,9 @@ const {
 =======
     SIMPLE_QUESTIONS_2: BACKUP_SIMPLE_QUESTIONS_2,
 >>>>>>> 95334ef (cojmit)
+=======
+    SIMPLE_QUESTIONS_2: BACKUP_SIMPLE_QUESTIONS_2
+>>>>>>> 1509083 (Initialize task-components)
 }: Record<string, Question[]> = backupQuestionData as Record<
     string,
     Question[]
@@ -76,6 +88,7 @@ const NEW_BLANK_QUESTION = {
     expected: "",
     points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
     published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -84,6 +97,9 @@ const NEW_BLANK_QUESTION = {
 =======
     published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+    published: false
+>>>>>>> 1509083 (Initialize task-components)
 };
 
 const NEW_TRIVIA_QUESTION = {
@@ -99,6 +115,7 @@ const NEW_TRIVIA_QUESTION = {
     expected: "#FFD200",*/
     points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
     published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -107,6 +124,9 @@ const NEW_TRIVIA_QUESTION = {
 =======
     published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+    published: false
+>>>>>>> 1509083 (Initialize task-components)
 };
 
 ////////////////////////////////////////////
@@ -117,6 +137,7 @@ describe("Testing the Question[] functions", () => {
     // getPublishedQuestions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     test("Testing the getPublishedQuestions function", () => {
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -125,6 +146,9 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the getPublishedQuestions function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the getPublishedQuestions function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(getPublishedQuestions(BLANK_QUESTIONS)).toEqual([]);
         expect(getPublishedQuestions(SIMPLE_QUESTIONS)).toEqual([
             {
@@ -136,6 +160,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -144,6 +169,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -153,6 +181,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["red", "apple", "firetruck"],
                 expected: "red",
                 points: 1,
+<<<<<<< HEAD
                 published: true,
             },
         ]);
@@ -167,6 +196,14 @@ describe("Testing the Question[] functions", () => {
 =======
             BACKUP_SIMPLE_QUESTIONS_2,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+        ]);
+        expect(getPublishedQuestions(TRIVIA_QUESTIONS)).toEqual([]);
+        expect(getPublishedQuestions(SIMPLE_QUESTIONS_2)).toEqual(
+            BACKUP_SIMPLE_QUESTIONS_2
+>>>>>>> 1509083 (Initialize task-components)
         );
         expect(getPublishedQuestions(EMPTY_QUESTIONS)).toEqual([
             {
@@ -178,6 +215,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "correct",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -186,6 +224,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -196,6 +237,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "one",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -204,6 +246,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 3,
@@ -214,6 +259,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -222,6 +268,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 4,
@@ -231,6 +280,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "Even this one is not empty",
                 points: 5,
+<<<<<<< HEAD
                 published: true,
             },
         ]);
@@ -254,6 +304,23 @@ describe("Testing the Question[] functions", () => {
 =======
             BACKUP_SIMPLE_QUESTIONS_2,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+        ]);
+    });
+
+    test("Testing the getNonEmptyQuestions functions", () => {
+        expect(getNonEmptyQuestions(BLANK_QUESTIONS)).toEqual([]);
+        expect(getNonEmptyQuestions(SIMPLE_QUESTIONS)).toEqual(
+            BACKUP_SIMPLE_QUESTIONS
+        );
+        expect(getNonEmptyQuestions(TRIVIA_QUESTIONS)).toEqual(
+            BACKUP_TRIVIA_QUESTIONS
+        );
+        expect(getNonEmptyQuestions(SIMPLE_QUESTIONS_2)).toEqual(
+            BACKUP_SIMPLE_QUESTIONS_2
+>>>>>>> 1509083 (Initialize task-components)
         );
         expect(getNonEmptyQuestions(EMPTY_QUESTIONS)).toEqual([
             {
@@ -265,6 +332,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "correct",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -273,6 +341,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -283,6 +354,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "one",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -291,6 +363,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 3,
@@ -301,6 +376,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -309,6 +385,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 4,
@@ -318,6 +397,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "Even this one is not empty",
                 points: 5,
+<<<<<<< HEAD
                 published: true,
             },
         ]);
@@ -332,6 +412,14 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the findQuestion function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+        ]);
+    });
+
+    test("Testing the findQuestion function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(findQuestion(BLANK_QUESTIONS, 1)).toEqual(BLANK_QUESTIONS[0]);
         expect(findQuestion(BLANK_QUESTIONS, 47)).toEqual(BLANK_QUESTIONS[1]);
         expect(findQuestion(BLANK_QUESTIONS, 2)).toEqual(BLANK_QUESTIONS[2]);
@@ -343,6 +431,7 @@ describe("Testing the Question[] functions", () => {
         expect(findQuestion(SIMPLE_QUESTIONS, 6)).toEqual(null);
         expect(findQuestion(SIMPLE_QUESTIONS_2, 478)).toEqual(
 <<<<<<< HEAD
+<<<<<<< HEAD
             SIMPLE_QUESTIONS_2[0]
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -351,10 +440,14 @@ describe("Testing the Question[] functions", () => {
 =======
             SIMPLE_QUESTIONS_2[0],
 >>>>>>> 95334ef (cojmit)
+=======
+            SIMPLE_QUESTIONS_2[0]
+>>>>>>> 1509083 (Initialize task-components)
         );
         expect(findQuestion([], 0)).toEqual(null);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     test("Testing the removeQuestion", () => {
 <<<<<<< HEAD
@@ -364,6 +457,9 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the removeQuestion", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the removeQuestion", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(removeQuestion(BLANK_QUESTIONS, 1)).toEqual([
             {
                 id: 47,
@@ -374,6 +470,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -382,6 +479,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -391,6 +491,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -402,6 +503,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(removeQuestion(BLANK_QUESTIONS, 47)).toEqual([
             {
@@ -413,6 +518,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -421,6 +527,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -430,6 +539,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -441,6 +551,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(removeQuestion(BLANK_QUESTIONS, 2)).toEqual([
             {
@@ -452,6 +566,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -460,6 +575,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -469,6 +587,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -480,6 +599,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(removeQuestion(SIMPLE_QUESTIONS, 9)).toEqual([
             {
@@ -491,6 +614,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -499,6 +623,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -509,6 +636,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -517,6 +645,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -526,6 +657,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["red", "apple", "firetruck"],
                 expected: "red",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: true
             }
@@ -537,6 +669,10 @@ describe("Testing the Question[] functions", () => {
                 published: true,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(removeQuestion(SIMPLE_QUESTIONS, 5)).toEqual([
             {
@@ -548,6 +684,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -556,6 +693,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -566,6 +706,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -574,6 +715,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 9,
@@ -583,6 +727,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["square", "triangle", "circle"],
                 expected: "circle",
                 points: 2,
+<<<<<<< HEAD
                 published: false,
             },
         ]);
@@ -601,11 +746,24 @@ describe("Testing the Question[] functions", () => {
 =======
             "Question 2",
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+        ]);
+    });
+
+    test("Testing the getNames function", () => {
+        expect(getNames(BLANK_QUESTIONS)).toEqual([
+            "Question 1",
+            "My New Question",
+            "Question 2"
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(getNames(SIMPLE_QUESTIONS)).toEqual([
             "Addition",
             "Letters",
             "Colors",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "Shapes"
 <<<<<<< HEAD
@@ -615,10 +773,14 @@ describe("Testing the Question[] functions", () => {
 =======
             "Shapes",
 >>>>>>> 95334ef (cojmit)
+=======
+            "Shapes"
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(getNames(TRIVIA_QUESTIONS)).toEqual([
             "Mascot",
             "Motto",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "Goats"
 <<<<<<< HEAD
@@ -628,12 +790,16 @@ describe("Testing the Question[] functions", () => {
 =======
             "Goats",
 >>>>>>> 95334ef (cojmit)
+=======
+            "Goats"
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(getNames(SIMPLE_QUESTIONS_2)).toEqual([
             "Students",
             "Importance",
             "Sentience",
             "Danger",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "Listening"
 <<<<<<< HEAD
@@ -643,12 +809,16 @@ describe("Testing the Question[] functions", () => {
 =======
             "Listening",
 >>>>>>> 95334ef (cojmit)
+=======
+            "Listening"
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(getNames(EMPTY_QUESTIONS)).toEqual([
             "Empty 1",
             "Empty 2",
             "Empty 3",
             "Empty 4",
+<<<<<<< HEAD
             "Empty 5 (Actual)",
         ]);
     });
@@ -662,6 +832,13 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the sumPoints function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+            "Empty 5 (Actual)"
+        ]);
+    });
+
+    test("Testing the sumPoints function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(sumPoints(BLANK_QUESTIONS)).toEqual(3);
         expect(sumPoints(SIMPLE_QUESTIONS)).toEqual(5);
         expect(sumPoints(TRIVIA_QUESTIONS)).toEqual(20);
@@ -669,6 +846,7 @@ describe("Testing the Question[] functions", () => {
         expect(sumPoints(SIMPLE_QUESTIONS_2)).toEqual(300);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     test("Testing the sumPublishedPoints function", () => {
 <<<<<<< HEAD
@@ -678,6 +856,9 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the sumPublishedPoints function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the sumPublishedPoints function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(sumPublishedPoints(BLANK_QUESTIONS)).toEqual(0);
         expect(sumPublishedPoints(SIMPLE_QUESTIONS)).toEqual(2);
         expect(sumPublishedPoints(TRIVIA_QUESTIONS)).toEqual(0);
@@ -685,6 +866,7 @@ describe("Testing the Question[] functions", () => {
         expect(sumPublishedPoints(SIMPLE_QUESTIONS_2)).toEqual(300);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     test("Testing the toCSV function", () => {
 <<<<<<< HEAD
@@ -694,6 +876,9 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the toCSV function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the toCSV function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(toCSV(BLANK_QUESTIONS)).toEqual(`id,name,options,points,published
 1,Question 1,0,1,false
 47,My New Question,0,1,false
@@ -724,6 +909,7 @@ describe("Testing the Question[] functions", () => {
 1937,Listening,0,100,true`);
     });
 
+<<<<<<< HEAD
     test("(3 pts) Testing the makeAnswers function", () => {
         expect(makeAnswers(BLANK_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
@@ -737,11 +923,19 @@ describe("Testing the Question[] functions", () => {
 =======
             { questionId: 2, correct: false, text: "", submitted: false },
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the makeAnswers function", () => {
+        expect(makeAnswers(BLANK_QUESTIONS)).toEqual([
+            { questionId: 1, correct: false, text: "", submitted: false },
+            { questionId: 47, correct: false, text: "", submitted: false },
+            { questionId: 2, correct: false, text: "", submitted: false }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(makeAnswers(SIMPLE_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
             { questionId: 2, correct: false, text: "", submitted: false },
             { questionId: 5, correct: false, text: "", submitted: false },
+<<<<<<< HEAD
 <<<<<<< HEAD
             { questionId: 9, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
@@ -751,10 +945,14 @@ describe("Testing the Question[] functions", () => {
 =======
             { questionId: 9, correct: false, text: "", submitted: false },
 >>>>>>> 95334ef (cojmit)
+=======
+            { questionId: 9, correct: false, text: "", submitted: false }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(makeAnswers(TRIVIA_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
             { questionId: 2, correct: false, text: "", submitted: false },
+<<<<<<< HEAD
 <<<<<<< HEAD
             { questionId: 3, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
@@ -764,12 +962,16 @@ describe("Testing the Question[] functions", () => {
 =======
             { questionId: 3, correct: false, text: "", submitted: false },
 >>>>>>> 95334ef (cojmit)
+=======
+            { questionId: 3, correct: false, text: "", submitted: false }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(makeAnswers(SIMPLE_QUESTIONS_2)).toEqual([
             { questionId: 478, correct: false, text: "", submitted: false },
             { questionId: 1937, correct: false, text: "", submitted: false },
             { questionId: 479, correct: false, text: "", submitted: false },
             { questionId: 777, correct: false, text: "", submitted: false },
+<<<<<<< HEAD
 <<<<<<< HEAD
             { questionId: 1937, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
@@ -779,12 +981,16 @@ describe("Testing the Question[] functions", () => {
 =======
             { questionId: 1937, correct: false, text: "", submitted: false },
 >>>>>>> 95334ef (cojmit)
+=======
+            { questionId: 1937, correct: false, text: "", submitted: false }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(makeAnswers(EMPTY_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
             { questionId: 2, correct: false, text: "", submitted: false },
             { questionId: 3, correct: false, text: "", submitted: false },
             { questionId: 4, correct: false, text: "", submitted: false },
+<<<<<<< HEAD
             { questionId: 5, correct: false, text: "", submitted: false },
         ]);
     });
@@ -798,6 +1004,13 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the publishAll function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+            { questionId: 5, correct: false, text: "", submitted: false }
+        ]);
+    });
+
+    test("Testing the publishAll function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(publishAll(BLANK_QUESTIONS)).toEqual([
             {
                 id: 1,
@@ -808,6 +1021,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -816,6 +1030,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -826,6 +1043,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -834,6 +1052,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -843,6 +1064,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: true
             }
@@ -854,6 +1076,10 @@ describe("Testing the Question[] functions", () => {
                 published: true,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(publishAll(SIMPLE_QUESTIONS)).toEqual([
             {
@@ -865,6 +1091,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -873,6 +1100,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -883,6 +1113,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -891,6 +1122,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -901,6 +1135,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "red",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -909,6 +1144,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 9,
@@ -918,6 +1156,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["square", "triangle", "circle"],
                 expected: "circle",
                 points: 2,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: true
             }
@@ -929,6 +1168,10 @@ describe("Testing the Question[] functions", () => {
                 published: true,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(publishAll(TRIVIA_QUESTIONS)).toEqual([
             {
@@ -940,6 +1183,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "YoUDee",
                 points: 7,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -948,6 +1192,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -957,6 +1204,7 @@ describe("Testing the Question[] functions", () => {
                 options: [
                     "Knowledge is the light of the mind",
                     "Just U Do it",
+<<<<<<< HEAD
                     "Nothing, what's the motto with you?",
                 ],
                 expected: "Knowledge is the light of the mind",
@@ -970,6 +1218,13 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                    "Nothing, what's the motto with you?"
+                ],
+                expected: "Knowledge is the light of the mind",
+                points: 3,
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 3,
@@ -979,6 +1234,7 @@ describe("Testing the Question[] functions", () => {
                 options: [
                     "Zero, why would there be goats on the green?",
                     "18420",
+<<<<<<< HEAD
                     "Two",
                 ],
                 expected: "Two",
@@ -994,6 +1250,14 @@ describe("Testing the Question[] functions", () => {
                 published: true,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                    "Two"
+                ],
+                expected: "Two",
+                points: 10,
+                published: true
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(publishAll(EMPTY_QUESTIONS)).toEqual([
             {
@@ -1005,6 +1269,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "correct",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1013,6 +1278,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1023,6 +1291,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "one",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1031,6 +1300,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 3,
@@ -1041,6 +1313,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1049,6 +1322,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 4,
@@ -1059,6 +1335,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Even this one is not empty",
                 points: 5,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1067,6 +1344,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -1076,6 +1356,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 5,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: true
             }
@@ -1087,10 +1368,15 @@ describe("Testing the Question[] functions", () => {
                 published: true,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(publishAll(SIMPLE_QUESTIONS_2)).toEqual(SIMPLE_QUESTIONS_2);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     test("Testing the sameType function", () => {
 <<<<<<< HEAD
@@ -1100,6 +1386,9 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the sameType function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the sameType function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(sameType([])).toEqual(true);
         expect(sameType(BLANK_QUESTIONS)).toEqual(false);
         expect(sameType(SIMPLE_QUESTIONS)).toEqual(false);
@@ -1108,6 +1397,7 @@ describe("Testing the Question[] functions", () => {
         expect(sameType(SIMPLE_QUESTIONS_2)).toEqual(true);
     });
 
+<<<<<<< HEAD
     test("(3 pts) Testing the addNewQuestion function", () => {
         expect(
 <<<<<<< HEAD
@@ -1119,12 +1409,18 @@ describe("Testing the Question[] functions", () => {
 =======
             addNewQuestion([], 142, "A new question", "short_answer_question"),
 >>>>>>> 95334ef (cojmit)
+=======
+    test("Testing the addNewQuestion function", () => {
+        expect(
+            addNewQuestion([], 142, "A new question", "short_answer_question")
+>>>>>>> 1509083 (Initialize task-components)
         ).toEqual([NEW_BLANK_QUESTION]);
         expect(
             addNewQuestion(
                 BLANK_QUESTIONS,
                 142,
                 "A new question",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "short_answer_question"
             )
@@ -1136,12 +1432,17 @@ describe("Testing the Question[] functions", () => {
                 "short_answer_question",
             ),
 >>>>>>> 95334ef (cojmit)
+=======
+                "short_answer_question"
+            )
+>>>>>>> 1509083 (Initialize task-components)
         ).toEqual([...BLANK_QUESTIONS, NEW_BLANK_QUESTION]);
         expect(
             addNewQuestion(
                 TRIVIA_QUESTIONS,
                 449,
                 "Colors",
+<<<<<<< HEAD
                 "multiple_choice_question",
             ),
         ).toEqual([...TRIVIA_QUESTIONS, NEW_TRIVIA_QUESTION]);
@@ -1156,6 +1457,14 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the renameQuestionById function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+                "multiple_choice_question"
+            )
+        ).toEqual([...TRIVIA_QUESTIONS, NEW_TRIVIA_QUESTION]);
+    });
+
+    test("Testing the renameQuestionById function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(renameQuestionById(BLANK_QUESTIONS, 1, "New Name")).toEqual([
             {
                 id: 1,
@@ -1166,6 +1475,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1174,6 +1484,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1184,6 +1497,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1192,6 +1506,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1201,6 +1518,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -1212,6 +1530,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(renameQuestionById(BLANK_QUESTIONS, 47, "Another Name")).toEqual(
             [
@@ -1224,6 +1546,7 @@ describe("Testing the Question[] functions", () => {
                     expected: "",
                     points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1232,6 +1555,9 @@ describe("Testing the Question[] functions", () => {
 =======
                     published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                    published: false
+>>>>>>> 1509083 (Initialize task-components)
                 },
                 {
                     id: 47,
@@ -1242,6 +1568,7 @@ describe("Testing the Question[] functions", () => {
                     expected: "",
                     points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1250,6 +1577,9 @@ describe("Testing the Question[] functions", () => {
 =======
                     published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                    published: false
+>>>>>>> 1509083 (Initialize task-components)
                 },
                 {
                     id: 2,
@@ -1259,6 +1589,7 @@ describe("Testing the Question[] functions", () => {
                     options: [],
                     expected: "",
                     points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                     published: false
                 }
@@ -1272,6 +1603,11 @@ describe("Testing the Question[] functions", () => {
                 },
             ],
 >>>>>>> 95334ef (cojmit)
+=======
+                    published: false
+                }
+            ]
+>>>>>>> 1509083 (Initialize task-components)
         );
         expect(renameQuestionById(SIMPLE_QUESTIONS, 5, "Colours")).toEqual([
             {
@@ -1283,6 +1619,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1291,6 +1628,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1301,6 +1641,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1309,6 +1650,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -1319,6 +1663,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "red",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1327,6 +1672,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 9,
@@ -1336,6 +1684,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["square", "triangle", "circle"],
                 expected: "circle",
                 points: 2,
+<<<<<<< HEAD
                 published: false,
             },
         ]);
@@ -1350,10 +1699,19 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Test the changeQuestionTypeById function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+        ]);
+    });
+
+    test("Test the changeQuestionTypeById function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(
             changeQuestionTypeById(
                 BLANK_QUESTIONS,
                 1,
+<<<<<<< HEAD
                 "multiple_choice_question",
             ),
         ).toEqual(BLANK_QUESTIONS);
@@ -1367,6 +1725,13 @@ describe("Testing the Question[] functions", () => {
 =======
             changeQuestionTypeById(BLANK_QUESTIONS, 1, "short_answer_question"),
 >>>>>>> 95334ef (cojmit)
+=======
+                "multiple_choice_question"
+            )
+        ).toEqual(BLANK_QUESTIONS);
+        expect(
+            changeQuestionTypeById(BLANK_QUESTIONS, 1, "short_answer_question")
+>>>>>>> 1509083 (Initialize task-components)
         ).toEqual([
             {
                 id: 1,
@@ -1377,6 +1742,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1385,6 +1751,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1395,6 +1764,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1403,6 +1773,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1412,6 +1785,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
                 published: false,
             },
         ]);
@@ -1429,6 +1803,13 @@ describe("Testing the Question[] functions", () => {
                 "short_answer_question",
             ),
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+        ]);
+        expect(
+            changeQuestionTypeById(BLANK_QUESTIONS, 47, "short_answer_question")
+>>>>>>> 1509083 (Initialize task-components)
         ).toEqual([
             {
                 id: 1,
@@ -1439,6 +1820,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1447,6 +1829,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1457,6 +1842,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1465,6 +1851,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1474,6 +1863,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
                 published: false,
             },
         ]);
@@ -1491,6 +1881,13 @@ describe("Testing the Question[] functions", () => {
                 "short_answer_question",
             ),
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+        ]);
+        expect(
+            changeQuestionTypeById(TRIVIA_QUESTIONS, 3, "short_answer_question")
+>>>>>>> 1509083 (Initialize task-components)
         ).toEqual([
             {
                 id: 1,
@@ -1501,6 +1898,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "YoUDee",
                 points: 7,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1509,6 +1907,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1518,6 +1919,7 @@ describe("Testing the Question[] functions", () => {
                 options: [
                     "Knowledge is the light of the mind",
                     "Just U Do it",
+<<<<<<< HEAD
                     "Nothing, what's the motto with you?",
                 ],
                 expected: "Knowledge is the light of the mind",
@@ -1531,6 +1933,13 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                    "Nothing, what's the motto with you?"
+                ],
+                expected: "Knowledge is the light of the mind",
+                points: 3,
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 3,
@@ -1540,6 +1949,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "Two",
                 points: 10,
+<<<<<<< HEAD
                 published: false,
             },
         ]);
@@ -1554,6 +1964,14 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the editOption function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+        ]);
+    });
+
+    test("Testing the addEditQuestionOption function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(editOption(BLANK_QUESTIONS, 1, -1, "NEW OPTION")).toEqual([
             {
                 id: 1,
@@ -1564,6 +1982,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1572,6 +1991,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1582,6 +2004,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1590,6 +2013,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1599,6 +2025,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -1610,6 +2037,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(editOption(BLANK_QUESTIONS, 47, -1, "Another option")).toEqual([
             {
@@ -1621,6 +2052,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1629,6 +2061,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1639,6 +2074,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1647,6 +2083,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1656,6 +2095,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -1667,6 +2107,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(editOption(SIMPLE_QUESTIONS, 5, -1, "newspaper")).toEqual([
             {
@@ -1678,6 +2122,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1686,6 +2131,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1696,6 +2144,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1704,6 +2153,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -1714,6 +2166,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "red",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1722,6 +2175,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 9,
@@ -1731,6 +2187,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["square", "triangle", "circle"],
                 expected: "circle",
                 points: 2,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -1742,6 +2199,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(editOption(SIMPLE_QUESTIONS, 5, 0, "newspaper")).toEqual([
             {
@@ -1753,6 +2214,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1761,6 +2223,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1771,6 +2236,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1779,6 +2245,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -1789,6 +2258,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "red",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1797,6 +2267,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 9,
@@ -1806,6 +2279,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["square", "triangle", "circle"],
                 expected: "circle",
                 points: 2,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -1817,6 +2291,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
 
         expect(editOption(SIMPLE_QUESTIONS, 5, 2, "newspaper")).toEqual([
@@ -1829,6 +2307,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "4",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1837,6 +2316,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1847,6 +2329,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "Z",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1855,6 +2338,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 5,
@@ -1865,6 +2351,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "red",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: true
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1873,6 +2360,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: true,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: true
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 9,
@@ -1882,6 +2372,7 @@ describe("Testing the Question[] functions", () => {
                 options: ["square", "triangle", "circle"],
                 expected: "circle",
                 points: 2,
+<<<<<<< HEAD
                 published: false,
             },
         ]);
@@ -1896,6 +2387,14 @@ describe("Testing the Question[] functions", () => {
 =======
     test("(3 pts) Testing the duplicateQuestionInArray function", () => {
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+        ]);
+    });
+
+    test("Testing the duplicateQuestionInArray function", () => {
+>>>>>>> 1509083 (Initialize task-components)
         expect(duplicateQuestionInArray(BLANK_QUESTIONS, 1, 27)).toEqual([
             {
                 id: 1,
@@ -1906,6 +2405,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1914,6 +2414,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 27,
@@ -1924,6 +2427,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1932,6 +2436,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1942,6 +2449,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1950,6 +2458,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -1959,6 +2470,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -1970,6 +2482,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(duplicateQuestionInArray(BLANK_QUESTIONS, 47, 19)).toEqual([
             {
@@ -1981,6 +2497,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -1989,6 +2506,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 47,
@@ -1999,6 +2519,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -2007,6 +2528,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 19,
@@ -2017,6 +2541,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "",
                 points: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -2025,6 +2550,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -2034,6 +2562,7 @@ describe("Testing the Question[] functions", () => {
                 options: [],
                 expected: "",
                 points: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 published: false
             }
@@ -2045,6 +2574,10 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
         expect(duplicateQuestionInArray(TRIVIA_QUESTIONS, 3, 111)).toEqual([
             {
@@ -2056,6 +2589,7 @@ describe("Testing the Question[] functions", () => {
                 expected: "YoUDee",
                 points: 7,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 published: false
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -2064,6 +2598,9 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 2,
@@ -2073,6 +2610,7 @@ describe("Testing the Question[] functions", () => {
                 options: [
                     "Knowledge is the light of the mind",
                     "Just U Do it",
+<<<<<<< HEAD
                     "Nothing, what's the motto with you?",
                 ],
                 expected: "Knowledge is the light of the mind",
@@ -2086,6 +2624,13 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                    "Nothing, what's the motto with you?"
+                ],
+                expected: "Knowledge is the light of the mind",
+                points: 3,
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 3,
@@ -2095,6 +2640,7 @@ describe("Testing the Question[] functions", () => {
                 options: [
                     "Zero, why would there be goats on the green?",
                     "18420",
+<<<<<<< HEAD
                     "Two",
                 ],
                 expected: "Two",
@@ -2108,6 +2654,13 @@ describe("Testing the Question[] functions", () => {
 =======
                 published: false,
 >>>>>>> 95334ef (cojmit)
+=======
+                    "Two"
+                ],
+                expected: "Two",
+                points: 10,
+                published: false
+>>>>>>> 1509083 (Initialize task-components)
             },
             {
                 id: 111,
@@ -2117,6 +2670,7 @@ describe("Testing the Question[] functions", () => {
                 options: [
                     "Zero, why would there be goats on the green?",
                     "18420",
+<<<<<<< HEAD
                     "Two",
                 ],
                 expected: "Two",
@@ -2132,6 +2686,14 @@ describe("Testing the Question[] functions", () => {
                 published: false,
             },
 >>>>>>> 95334ef (cojmit)
+=======
+                    "Two"
+                ],
+                expected: "Two",
+                points: 10,
+                published: false
+            }
+>>>>>>> 1509083 (Initialize task-components)
         ]);
     });
 

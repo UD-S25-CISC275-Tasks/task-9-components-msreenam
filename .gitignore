@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1509083 (Initialize task-components)
 build/
 
 # Logs
@@ -134,6 +137,7 @@ package-lock.json
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
+<<<<<<< HEAD
 .pnp.*
 
 =======
@@ -165,3 +169,6 @@ yarn-error.log*
 
 =======
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+.pnp.*
+>>>>>>> 1509083 (Initialize task-components)

@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 export function StartAttempt(): React.JSX.Element {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 89be9a0 (finish this)
     const [attempts, setAttempts] = useState<number>(4);
@@ -43,4 +44,7 @@ export function StartAttempt(): React.JSX.Element {
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 89be9a0 (finish this)
+=======
+    return <div>Start Attempt</div>;
+>>>>>>> 1509083 (Initialize task-components)
 }

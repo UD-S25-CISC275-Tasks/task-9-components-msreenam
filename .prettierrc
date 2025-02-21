@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "experimentalTernaries": true,
     "tabWidth": 4,
 
@@ -13,4 +14,8 @@
 
 =======
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+    "experimentalTernaries": true,
+    "tabWidth": 4
+>>>>>>> 1509083 (Initialize task-components)
 }
