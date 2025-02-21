@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2f2ff1b (Initialize task-state)
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -9,9 +12,13 @@ import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // eslint-disable-next-line no-undef
 
 function App(): React.JSX.Element {
+=======
+function App(): JSX.Element {
+>>>>>>> 2f2ff1b (Initialize task-state)
     return (
         <div className="App">
             <header className="App-header">
@@ -28,6 +35,7 @@ function App(): React.JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
+<<<<<<< HEAD
 
             <CycleHoliday></CycleHoliday>
 
@@ -39,6 +47,9 @@ function App(): React.JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
             </p>
+=======
+            <CycleHoliday></CycleHoliday>
+>>>>>>> 2f2ff1b (Initialize task-state)
         </div>
     );
 }

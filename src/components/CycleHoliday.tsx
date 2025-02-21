@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
+<<<<<<< HEAD
 type Holiday = "🎏" | "🪔" | "🎃" | "🎄" | "🎆";
 
 const holidaysByYear: Record<Holiday, Holiday> = {
@@ -37,4 +38,8 @@ export function CycleHoliday(): React.JSX.Element {
             <Button onClick={cycleByYear}>Advance by Year</Button>
         </div>
     );
+=======
+export function CycleHoliday(): React.JSX.Element {
+    return <div>Cycle Holiday</div>;
+>>>>>>> 2f2ff1b (Initialize task-state)
 }
