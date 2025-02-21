@@ -1,11 +1,10 @@
 {
-<<<<<<< HEAD
     "experimentalTernaries": true,
-    "tabWidth": 4
-=======
+    "tabWidth": 4,
+
     "trailingComma": "none",
     "tabWidth": 4,
     "semi": true,
     "singleQuote": false
->>>>>>> 2f2ff1b (Initialize task-state)
+
 }
