@@ -2,8 +2,11 @@ import React from "react";
 import "./App.css";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 4c9dc24 (commit)
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -18,7 +21,10 @@ import { Counter } from "./components/Counter";
 function App(): React.JSX.Element {
 =======
 function App(): JSX.Element {
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 4c9dc24 (commit)
     return (
         <div className="App">
             <header className="App-header">
@@ -38,6 +44,7 @@ function App(): JSX.Element {
 <<<<<<< HEAD
 
             <CycleHoliday></CycleHoliday>
+<<<<<<< HEAD
 
             {/*<CycleHoliday></CycleHoliday>*/}
 
@@ -50,6 +57,8 @@ function App(): JSX.Element {
 =======
             <CycleHoliday></CycleHoliday>
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 4c9dc24 (commit)
         </div>
     );
 }
