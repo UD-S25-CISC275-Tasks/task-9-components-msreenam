@@ -6,11 +6,7 @@ import { Question, QuestionType } from "./interfaces/question";
  * that are `published`.
  */
 export function getPublishedQuestions(questions: Question[]): Question[] {
-<<<<<<< HEAD
     return questions.filter((q) => q.published);
-=======
-    return [];
->>>>>>> origin/task-state
 }
 
 /**
@@ -19,13 +15,9 @@ export function getPublishedQuestions(questions: Question[]): Question[] {
  * `expected`, and an empty array for its `options`.
  */
 export function getNonEmptyQuestions(questions: Question[]): Question[] {
-<<<<<<< HEAD
     return questions.filter(
         (q) => q.body !== "" || q.expected !== "" || q.options.length > 0,
     );
-=======
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -34,15 +26,9 @@ export function getNonEmptyQuestions(questions: Question[]): Question[] {
  */
 export function findQuestion(
     questions: Question[],
-<<<<<<< HEAD
     id: number,
 ): Question | null {
     return questions.find((q) => q.id === id) || null;
-=======
-    id: number
-): Question | null {
-    return null;
->>>>>>> origin/task-state
 }
 
 /**
@@ -50,11 +36,7 @@ export function findQuestion(
  * with the given `id`.
  */
 export function removeQuestion(questions: Question[], id: number): Question[] {
-<<<<<<< HEAD
     return questions.filter((q) => q.id !== id);
-=======
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -62,35 +44,23 @@ export function removeQuestion(questions: Question[], id: number): Question[] {
  * questions, as an array.
  */
 export function getNames(questions: Question[]): string[] {
-<<<<<<< HEAD
     return questions.map((q) => q.name);
-=======
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
  * Consumes an array of questions and returns the sum total of all their points added together.
  */
 export function sumPoints(questions: Question[]): number {
-<<<<<<< HEAD
     return questions.reduce((sum, q) => sum + q.points, 0);
-=======
-    return 0;
->>>>>>> origin/task-state
 }
 
 /***
  * Consumes an array of questions and returns the sum total of the PUBLISHED questions.
  */
 export function sumPublishedPoints(questions: Question[]): number {
-<<<<<<< HEAD
     return questions
         .filter((q) => q.published)
         .reduce((sum, q) => sum + q.points, 0);
-=======
-    return 0;
->>>>>>> origin/task-state
 }
 
 /***
@@ -111,16 +81,12 @@ id,name,options,points,published
  * Check the unit tests for more examples!
  */
 export function toCSV(questions: Question[]): string {
-<<<<<<< HEAD
     const header = "id,name,options,points,published";
     const rows = questions.map(
         (q) =>
             `${q.id},${q.name},${q.options.length},${q.points},${q.published}`,
     );
     return [header, ...rows].join("\n");
-=======
-    return "";
->>>>>>> origin/task-state
 }
 
 /**
@@ -129,16 +95,12 @@ export function toCSV(questions: Question[]): string {
  * making the `text` an empty string, and using false for both `submitted` and `correct`.
  */
 export function makeAnswers(questions: Question[]): Answer[] {
-<<<<<<< HEAD
     return questions.map((q) => ({
         questionId: q.id,
         text: "",
         submitted: false,
         correct: false,
     }));
-=======
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -146,11 +108,7 @@ export function makeAnswers(questions: Question[]): Answer[] {
  * each question is now published, regardless of its previous published status.
  */
 export function publishAll(questions: Question[]): Question[] {
-<<<<<<< HEAD
     return questions.map((q) => ({ ...q, published: true }));
-=======
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -158,11 +116,7 @@ export function publishAll(questions: Question[]): Question[] {
  * are the same type. They can be any type, as long as they are all the SAME type.
  */
 export function sameType(questions: Question[]): boolean {
-<<<<<<< HEAD
     return questions.every((q) => q.type === questions[0]?.type);
-=======
-    return false;
->>>>>>> origin/task-state
 }
 
 /***
@@ -174,7 +128,6 @@ export function addNewQuestion(
     questions: Question[],
     id: number,
     name: string,
-<<<<<<< HEAD
     type: QuestionType,
 ): Question[] {
     const newQuestion = {
@@ -188,11 +141,6 @@ export function addNewQuestion(
         published: false,
     };
     return [...questions, newQuestion];
-=======
-    type: QuestionType
-): Question[] {
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -203,17 +151,11 @@ export function addNewQuestion(
 export function renameQuestionById(
     questions: Question[],
     targetId: number,
-<<<<<<< HEAD
     newName: string,
 ): Question[] {
     return questions.map((q) =>
         q.id === targetId ? { ...q, name: newName } : q,
     );
-=======
-    newName: string
-): Question[] {
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -226,7 +168,6 @@ export function renameQuestionById(
 export function changeQuestionTypeById(
     questions: Question[],
     targetId: number,
-<<<<<<< HEAD
     newQuestionType: QuestionType,
 ): Question[] {
     return questions.map((q) =>
@@ -241,11 +182,6 @@ export function changeQuestionTypeById(
             }
         :   q,
     );
-=======
-    newQuestionType: QuestionType
-): Question[] {
-    return [];
->>>>>>> origin/task-state
 }
 
 /**
@@ -262,7 +198,6 @@ export function editOption(
     questions: Question[],
     targetId: number,
     targetOptionIndex: number,
-<<<<<<< HEAD
     newOption: string,
 ): Question[] {
     return questions.map((q) =>
@@ -278,11 +213,6 @@ export function editOption(
             }
         :   q,
     );
-=======
-    newOption: string
-) {
-    return [];
->>>>>>> origin/task-state
 }
 
 /***
@@ -294,7 +224,6 @@ export function editOption(
 export function duplicateQuestionInArray(
     questions: Question[],
     targetId: number,
-<<<<<<< HEAD
     newId: number,
 ): Question[] {
     const index = questions.findIndex((q) => q.id === targetId);
@@ -309,9 +238,4 @@ export function duplicateQuestionInArray(
                 ...questions.slice(index + 1),
             ]
         );
-=======
-    newId: number
-): Question[] {
-    return [];
->>>>>>> origin/task-state
 }
