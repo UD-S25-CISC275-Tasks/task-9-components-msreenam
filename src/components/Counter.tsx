@@ -6,6 +6,9 @@ export function Counter(): React.JSX.Element {
     return (
         <span>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6016326 (counter)
             <Button
                 onClick={() => {
                     setValue(1 + value);
@@ -13,9 +16,12 @@ export function Counter(): React.JSX.Element {
             >
                 Add One
             </Button>
+<<<<<<< HEAD
 =======
             <Button onClick={() => setValue(1 + value)}>Add One</Button>
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
             to {value}.
         </span>
     );

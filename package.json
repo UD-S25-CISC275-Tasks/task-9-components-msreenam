@@ -6,6 +6,7 @@
     "private": true,
     "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/user-event": "^13.5.0",
         "@types/jest": "^27.5.2",
@@ -18,15 +19,23 @@
 =======
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
+=======
+        "@testing-library/jest-dom": "^5.17.0",
+>>>>>>> 6016326 (counter)
         "@testing-library/user-event": "^13.5.0",
-        "@types/jest": "^27.4.0",
-        "@types/node": "^16.11.21",
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.105",
         "react": "^18.3.1",
-        "react-bootstrap": "^2.1.1",
+        "react-bootstrap": "^2.10.4",
         "react-dom": "^18.3.1",
+<<<<<<< HEAD
         "react-scripts": "5.0.0",
         "typescript": "^4.5.5",
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+        "react-scripts": "5.0.1",
+        "typescript": "^4.9.5",
+>>>>>>> 6016326 (counter)
         "web-vitals": "^2.1.4"
     },
     "scripts": {
@@ -34,7 +43,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "test:cov": "react-scripts test --coverage --watchAll",
+        "test:json": "react-scripts test --json --watchAll=false --outputFile jest-output.json --coverage",
         "eject": "react-scripts eject",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
         "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
@@ -43,6 +54,10 @@
         "deploy": "gh-pages -d build",
         "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+        "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
+        "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
+>>>>>>> 6016326 (counter)
         "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}"
     },
     "eslintConfig": {
@@ -66,6 +81,9 @@
     "devDependencies": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6016326 (counter)
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@babel/plugin-transform-private-property-in-object": "^7.24.7",
         "@testing-library/dom": "^10.4.0",
@@ -86,6 +104,7 @@
         "prettier-eslint": "^16.3.0",
         "ts-jest": "^29.2.4",
         "ts-node": "^10.9.2"
+<<<<<<< HEAD
 =======
 =======
         "@types/react": "^19.0.10",
@@ -101,6 +120,8 @@
         "prettier": "2.5.1",
         "prettier-eslint": "^13.0.0"
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
     },
     "jest": {
         "collectCoverageFrom": [

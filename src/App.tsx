@@ -3,6 +3,7 @@ import "./App.css";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
@@ -20,6 +21,16 @@ import { Counter } from "./components/Counter";
 
 function App(): React.JSX.Element {
 =======
+=======
+//import { ChangeType } from "./components/ChangeType";
+//import { RevealAnswer } from "./components/RevealAnswer";
+//import { StartAttempt } from "./components/StartAttempt";
+//import { TwoDice } from "./components/TwoDice";
+//import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
+
+// eslint-disable-next-line no-undef
+>>>>>>> 6016326 (counter)
 function App(): JSX.Element {
 <<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
@@ -33,14 +44,15 @@ function App(): JSX.Element {
             <hr></hr>
             <Counter></Counter>
             <hr />
-            <RevealAnswer></RevealAnswer>
+            {/*<RevealAnswer></RevealAnswer>*/}
             <hr />
-            <StartAttempt></StartAttempt>
+            {/*<StartAttempt></StartAttempt>*/}
             <hr />
-            <TwoDice></TwoDice>
+            {/*<TwoDice></TwoDice>*/}
             <hr />
-            <ChangeType></ChangeType>
+            {/*<ChangeType></ChangeType>*/}
             <hr />
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             <CycleHoliday></CycleHoliday>
@@ -59,6 +71,9 @@ function App(): JSX.Element {
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 4c9dc24 (commit)
+=======
+            {/*<CycleHoliday></CycleHoliday>*/}
+>>>>>>> 6016326 (counter)
         </div>
     );
 }

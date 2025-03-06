@@ -8,8 +8,7 @@ import { Question, QuestionType } from "./interfaces/question";
 export function makeBlankQuestion(
     id: number,
     name: string,
-<<<<<<< HEAD
-    type: QuestionType,
+    type: QuestionType
 ): Question {
     return {
         id: id,
@@ -19,13 +18,16 @@ export function makeBlankQuestion(
         options: [],
         expected: "",
         points: 1,
-        published: false,
+        published: false
     };
+<<<<<<< HEAD
 =======
     type: QuestionType
 ): Question {
     return {};
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -36,13 +38,15 @@ export function makeBlankQuestion(
  * HINT: Look up the `trim` and `toLowerCase` functions.
  */
 export function isCorrect(question: Question, answer: string): boolean {
-<<<<<<< HEAD
     return (
         question.expected.toLowerCase().trim() === answer.toLowerCase().trim()
     );
+<<<<<<< HEAD
 =======
     return false;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -52,14 +56,16 @@ export function isCorrect(question: Question, answer: string): boolean {
  * be exactly one of the options.
  */
 export function isValid(question: Question, answer: string): boolean {
-<<<<<<< HEAD
     if (question.type === "short_answer_question") {
         return true;
     }
     return question.options.includes(answer);
+<<<<<<< HEAD
 =======
     return false;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -69,11 +75,13 @@ export function isValid(question: Question, answer: string): boolean {
  * name "My First Question" would become "9: My First Q".
  */
 export function toShortForm(question: Question): string {
-<<<<<<< HEAD
     return `${question.id}: ${question.name.slice(0, 10)}`;
+<<<<<<< HEAD
 =======
     return "";
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -94,7 +102,6 @@ export function toShortForm(question: Question): string {
  * Check the unit tests for more examples of what this looks like!
  */
 export function toMarkdown(question: Question): string {
-<<<<<<< HEAD
     var answer = `# ${question.name}\n${question.body}`;
 
     if (question.type === "multiple_choice_question") {
@@ -102,9 +109,12 @@ export function toMarkdown(question: Question): string {
             "\n" + question.options.map((option) => `- ${option}`).join("\n");
     }
     return answer;
+<<<<<<< HEAD
 =======
     return "";
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -112,7 +122,6 @@ export function toMarkdown(question: Question): string {
  * `newName`.
  */
 export function renameQuestion(question: Question, newName: string): Question {
-<<<<<<< HEAD
     return {
         id: question.id,
         name: newName,
@@ -121,21 +130,23 @@ export function renameQuestion(question: Question, newName: string): Question {
         options: question.options,
         expected: question.expected,
         points: question.points,
-        published: question.published,
+        published: question.published
     };
 }
+<<<<<<< HEAD
 =======
     return question;
 }
 
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 /**
  * Return a new version of the given question, except the `published` field
  * should be inverted. If the question was not published, now it should be
  * published; if it was published, now it should be not published.
  */
 export function publishQuestion(question: Question): Question {
-<<<<<<< HEAD
     return {
         id: question.id,
         name: question.name,
@@ -144,11 +155,14 @@ export function publishQuestion(question: Question): Question {
         options: question.options,
         expected: question.expected,
         points: question.points,
-        published: !question.published,
+        published: !question.published
     };
+<<<<<<< HEAD
 =======
     return question;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -158,7 +172,6 @@ export function publishQuestion(question: Question): Question {
  * The `published` field should be reset to false.
  */
 export function duplicateQuestion(id: number, oldQuestion: Question): Question {
-<<<<<<< HEAD
     return {
         id: id,
         name: `Copy of ${oldQuestion.name}`,
@@ -167,11 +180,14 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
         options: oldQuestion.options,
         expected: oldQuestion.expected,
         points: oldQuestion.points,
-        published: false,
+        published: false
     };
+<<<<<<< HEAD
 =======
     return oldQuestion;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -182,7 +198,6 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  * Check out the subsection about "Nested Fields" for more information.
  */
 export function addOption(question: Question, newOption: string): Question {
-<<<<<<< HEAD
     return {
         id: question.id,
         name: question.name,
@@ -191,11 +206,14 @@ export function addOption(question: Question, newOption: string): Question {
         options: [...question.options, newOption],
         expected: question.expected,
         points: question.points,
-        published: question.published,
+        published: question.published
     };
+<<<<<<< HEAD
 =======
     return question;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
 
 /**
@@ -210,8 +228,7 @@ export function mergeQuestion(
     id: number,
     name: string,
     contentQuestion: Question,
-<<<<<<< HEAD
-    { points }: { points: number },
+    { points }: { points: number }
 ): Question {
     return {
         id: id,
@@ -221,11 +238,14 @@ export function mergeQuestion(
         options: [...contentQuestion.options],
         expected: contentQuestion.expected,
         points: points,
-        published: false,
+        published: false
     };
+<<<<<<< HEAD
 =======
     { points }: { points: number }
 ): Question {
     return contentQuestion;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> 6016326 (counter)
 }
