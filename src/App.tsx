@@ -18,6 +18,7 @@ import { Counter } from "./components/Counter";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // eslint-disable-next-line no-undef
 
 function App(): React.JSX.Element {
@@ -44,6 +45,10 @@ function App(): JSX.Element {
 =======
 function App(): React.JSX.Element {
 >>>>>>> d1ba68a (answer is revealed)
+=======
+
+function App(): React.JSX.Element {
+>>>>>>> 95334ef (cojmit)
     return (
         <div className="App">
             <header className="App-header">
@@ -60,6 +65,7 @@ function App(): React.JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,6 +92,9 @@ function App(): React.JSX.Element {
 =======
             <CycleHoliday></CycleHoliday>
 >>>>>>> 89be9a0 (finish this)
+=======
+            <CycleHoliday></CycleHoliday>
+>>>>>>> 95334ef (cojmit)
         </div>
     );
 }

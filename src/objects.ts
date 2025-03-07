@@ -8,7 +8,7 @@ import { Question, QuestionType } from "./interfaces/question";
 export function makeBlankQuestion(
     id: number,
     name: string,
-    type: QuestionType
+    type: QuestionType,
 ): Question {
     return {
         id: id,
@@ -18,8 +18,9 @@ export function makeBlankQuestion(
         options: [],
         expected: "",
         points: 1,
-        published: false
+        published: false,
     };
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     type: QuestionType
@@ -28,6 +29,8 @@ export function makeBlankQuestion(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -42,11 +45,14 @@ export function isCorrect(question: Question, answer: string): boolean {
         question.expected.toLowerCase().trim() === answer.toLowerCase().trim()
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return false;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -61,11 +67,14 @@ export function isValid(question: Question, answer: string): boolean {
     }
     return question.options.includes(answer);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return false;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -77,11 +86,14 @@ export function isValid(question: Question, answer: string): boolean {
 export function toShortForm(question: Question): string {
     return `${question.id}: ${question.name.slice(0, 10)}`;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return "";
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -110,11 +122,14 @@ export function toMarkdown(question: Question): string {
     }
     return answer;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return "";
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -130,9 +145,10 @@ export function renameQuestion(question: Question, newName: string): Question {
         options: question.options,
         expected: question.expected,
         points: question.points,
-        published: question.published
+        published: question.published,
     };
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     return question;
@@ -141,6 +157,8 @@ export function renameQuestion(question: Question, newName: string): Question {
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 /**
  * Return a new version of the given question, except the `published` field
  * should be inverted. If the question was not published, now it should be
@@ -155,14 +173,17 @@ export function publishQuestion(question: Question): Question {
         options: question.options,
         expected: question.expected,
         points: question.points,
-        published: !question.published
+        published: !question.published,
     };
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     return question;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -180,14 +201,17 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
         options: oldQuestion.options,
         expected: oldQuestion.expected,
         points: oldQuestion.points,
-        published: false
+        published: false,
     };
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     return oldQuestion;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -206,14 +230,17 @@ export function addOption(question: Question, newOption: string): Question {
         options: [...question.options, newOption],
         expected: question.expected,
         points: question.points,
-        published: question.published
+        published: question.published,
     };
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     return question;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -228,7 +255,7 @@ export function mergeQuestion(
     id: number,
     name: string,
     contentQuestion: Question,
-    { points }: { points: number }
+    { points }: { points: number },
 ): Question {
     return {
         id: id,
@@ -238,8 +265,9 @@ export function mergeQuestion(
         options: [...contentQuestion.options],
         expected: contentQuestion.expected,
         points: points,
-        published: false
+        published: false,
     };
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     { points }: { points: number }
@@ -248,4 +276,6 @@ export function mergeQuestion(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }

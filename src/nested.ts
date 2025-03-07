@@ -8,11 +8,14 @@ import { Question, QuestionType } from "./interfaces/question";
 export function getPublishedQuestions(questions: Question[]): Question[] {
     return questions.filter((q) => q.published);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return [];
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -25,11 +28,14 @@ export function getNonEmptyQuestions(questions: Question[]): Question[] {
         (q) => q.body !== "" || q.expected !== "" || q.options.length > 0,
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return [];
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -42,6 +48,7 @@ export function findQuestion(
 ): Question | null {
     return questions.find((q) => q.id === id) || null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     id: number
 ): Question | null {
@@ -49,6 +56,8 @@ export function findQuestion(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -58,11 +67,14 @@ export function findQuestion(
 export function removeQuestion(questions: Question[], id: number): Question[] {
     return questions.filter((q) => q.id !== id);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return [];
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -72,11 +84,14 @@ export function removeQuestion(questions: Question[], id: number): Question[] {
 export function getNames(questions: Question[]): string[] {
     return questions.map((q) => q.name);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return [];
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -85,11 +100,14 @@ export function getNames(questions: Question[]): string[] {
 export function sumPoints(questions: Question[]): number {
     return questions.reduce((sum, q) => sum + q.points, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return 0;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -100,11 +118,14 @@ export function sumPublishedPoints(questions: Question[]): number {
         .filter((q) => q.published)
         .reduce((sum, q) => sum + q.points, 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return 0;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -132,11 +153,14 @@ export function toCSV(questions: Question[]): string {
     );
     return [header, ...rows].join("\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return "";
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -152,11 +176,14 @@ export function makeAnswers(questions: Question[]): Answer[] {
         correct: false,
     }));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return [];
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -166,11 +193,14 @@ export function makeAnswers(questions: Question[]): Answer[] {
 export function publishAll(questions: Question[]): Question[] {
     return questions.map((q) => ({ ...q, published: true }));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return [];
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -180,11 +210,14 @@ export function publishAll(questions: Question[]): Question[] {
 export function sameType(questions: Question[]): boolean {
     return questions.every((q) => q.type === questions[0]?.type);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     return false;
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -210,6 +243,7 @@ export function addNewQuestion(
     };
     return [...questions, newQuestion];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     type: QuestionType
 ): Question[] {
@@ -217,6 +251,8 @@ export function addNewQuestion(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -233,6 +269,7 @@ export function renameQuestionById(
         q.id === targetId ? { ...q, name: newName } : q,
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     newName: string
 ): Question[] {
@@ -240,6 +277,8 @@ export function renameQuestionById(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -267,6 +306,7 @@ export function changeQuestionTypeById(
         :   q,
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     newQuestionType: QuestionType
 ): Question[] {
@@ -274,6 +314,8 @@ export function changeQuestionTypeById(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /**
@@ -306,6 +348,7 @@ export function editOption(
         :   q,
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     newOption: string
 ) {
@@ -313,6 +356,8 @@ export function editOption(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
 
 /***
@@ -339,6 +384,7 @@ export function duplicateQuestionInArray(
             ]
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     newId: number
 ): Question[] {
@@ -346,4 +392,6 @@ export function duplicateQuestionInArray(
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 95334ef (cojmit)
 }
