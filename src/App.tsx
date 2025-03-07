@@ -4,6 +4,7 @@ import "./App.css";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
@@ -23,10 +24,13 @@ function App(): React.JSX.Element {
 =======
 =======
 //import { ChangeType } from "./components/ChangeType";
+=======
+import { ChangeType } from "./components/ChangeType";
+>>>>>>> 89be9a0 (finish this)
 import { RevealAnswer } from "./components/RevealAnswer";
-//import { StartAttempt } from "./components/StartAttempt";
-//import { TwoDice } from "./components/TwoDice";
-//import { CycleHoliday } from "./components/CycleHoliday";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 
 <<<<<<< HEAD
@@ -50,12 +54,13 @@ function App(): React.JSX.Element {
             <hr />
             <RevealAnswer></RevealAnswer>
             <hr />
-            {/*<StartAttempt></StartAttempt>*/}
+            <StartAttempt></StartAttempt>
             <hr />
-            {/*<TwoDice></TwoDice>*/}
+            <TwoDice></TwoDice>
             <hr />
-            {/*<ChangeType></ChangeType>*/}
+            <ChangeType></ChangeType>
             <hr />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -78,6 +83,9 @@ function App(): React.JSX.Element {
 =======
             {/*<CycleHoliday></CycleHoliday>*/}
 >>>>>>> 6016326 (counter)
+=======
+            <CycleHoliday></CycleHoliday>
+>>>>>>> 89be9a0 (finish this)
         </div>
     );
 }
