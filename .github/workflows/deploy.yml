@@ -138,6 +138,9 @@ jobs:
               if: ${{ !cancelled() }}
             - name: Upload artifact
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
               uses: actions/upload-pages-artifact@main
               if: ${{ !cancelled() }}
               with:
@@ -149,6 +152,7 @@ jobs:
               if: ${{ !cancelled() }}
               with:
                   artifact_name: github-pages
+<<<<<<< HEAD
 =======
               uses: actions/upload-pages-artifact@v2
               if: ${{ !cancelled() }}
@@ -159,3 +163,5 @@ jobs:
               uses: actions/deploy-pages@v2
               if: ${{ !cancelled() }}
 >>>>>>> 99d4307 (Initialize task-nested)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3

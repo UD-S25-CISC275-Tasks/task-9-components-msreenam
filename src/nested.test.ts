@@ -17,9 +17,12 @@ import {
     editOption,
     duplicateQuestionInArray
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 } from "./nested";
 import testQuestionData from "./data/questions.json";
 import backupQuestionData from "./data/questions.json";
@@ -31,9 +34,12 @@ const {
     EMPTY_QUESTIONS,
     SIMPLE_QUESTIONS_2
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }: Record<string, Question[]> =
     // Typecast the test data that we imported to be a record matching
     //  strings to the question list
@@ -47,9 +53,12 @@ const {
     EMPTY_QUESTIONS: BACKUP_EMPTY_QUESTIONS,
     SIMPLE_QUESTIONS_2: BACKUP_SIMPLE_QUESTIONS_2
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }: Record<string, Question[]> = backupQuestionData as Record<
     string,
     Question[]
@@ -65,9 +74,12 @@ const NEW_BLANK_QUESTION = {
     points: 1,
     published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 };
 
 const NEW_TRIVIA_QUESTION = {
@@ -84,9 +96,12 @@ const NEW_TRIVIA_QUESTION = {
     points: 1,
     published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 };
 
 ////////////////////////////////////////////
@@ -98,9 +113,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the getPublishedQuestions function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(getPublishedQuestions(BLANK_QUESTIONS)).toEqual([]);
         expect(getPublishedQuestions(SIMPLE_QUESTIONS)).toEqual([
             {
@@ -113,9 +131,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -132,9 +153,12 @@ describe("Testing the Question[] functions", () => {
         expect(getPublishedQuestions(SIMPLE_QUESTIONS_2)).toEqual(
             BACKUP_SIMPLE_QUESTIONS_2
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         );
         expect(getPublishedQuestions(EMPTY_QUESTIONS)).toEqual([
             {
@@ -147,9 +171,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -161,9 +188,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 3,
@@ -175,9 +205,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 4,
@@ -203,9 +236,12 @@ describe("Testing the Question[] functions", () => {
         expect(getNonEmptyQuestions(SIMPLE_QUESTIONS_2)).toEqual(
             BACKUP_SIMPLE_QUESTIONS_2
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         );
         expect(getNonEmptyQuestions(EMPTY_QUESTIONS)).toEqual([
             {
@@ -218,9 +254,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -232,9 +271,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 3,
@@ -246,9 +288,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 4,
@@ -265,9 +310,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the findQuestion function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(findQuestion(BLANK_QUESTIONS, 1)).toEqual(BLANK_QUESTIONS[0]);
         expect(findQuestion(BLANK_QUESTIONS, 47)).toEqual(BLANK_QUESTIONS[1]);
         expect(findQuestion(BLANK_QUESTIONS, 2)).toEqual(BLANK_QUESTIONS[2]);
@@ -280,18 +328,24 @@ describe("Testing the Question[] functions", () => {
         expect(findQuestion(SIMPLE_QUESTIONS_2, 478)).toEqual(
             SIMPLE_QUESTIONS_2[0]
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         );
         expect(findQuestion([], 0)).toEqual(null);
     });
 
     test("Testing the removeQuestion", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(removeQuestion(BLANK_QUESTIONS, 1)).toEqual([
             {
                 id: 47,
@@ -303,9 +357,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -318,9 +375,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(removeQuestion(BLANK_QUESTIONS, 47)).toEqual([
             {
@@ -333,9 +393,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -348,9 +411,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(removeQuestion(BLANK_QUESTIONS, 2)).toEqual([
             {
@@ -363,9 +429,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -378,9 +447,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(removeQuestion(SIMPLE_QUESTIONS, 9)).toEqual([
             {
@@ -393,9 +465,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -407,9 +482,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -422,9 +500,12 @@ describe("Testing the Question[] functions", () => {
                 published: true
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(removeQuestion(SIMPLE_QUESTIONS, 5)).toEqual([
             {
@@ -437,9 +518,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -451,9 +535,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 9,
@@ -474,9 +561,12 @@ describe("Testing the Question[] functions", () => {
             "My New Question",
             "Question 2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(getNames(SIMPLE_QUESTIONS)).toEqual([
             "Addition",
@@ -484,18 +574,24 @@ describe("Testing the Question[] functions", () => {
             "Colors",
             "Shapes"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(getNames(TRIVIA_QUESTIONS)).toEqual([
             "Mascot",
             "Motto",
             "Goats"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(getNames(SIMPLE_QUESTIONS_2)).toEqual([
             "Students",
@@ -504,9 +600,12 @@ describe("Testing the Question[] functions", () => {
             "Danger",
             "Listening"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(getNames(EMPTY_QUESTIONS)).toEqual([
             "Empty 1",
@@ -519,9 +618,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the sumPoints function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(sumPoints(BLANK_QUESTIONS)).toEqual(3);
         expect(sumPoints(SIMPLE_QUESTIONS)).toEqual(5);
         expect(sumPoints(TRIVIA_QUESTIONS)).toEqual(20);
@@ -531,9 +633,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the sumPublishedPoints function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(sumPublishedPoints(BLANK_QUESTIONS)).toEqual(0);
         expect(sumPublishedPoints(SIMPLE_QUESTIONS)).toEqual(2);
         expect(sumPublishedPoints(TRIVIA_QUESTIONS)).toEqual(0);
@@ -543,9 +648,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the toCSV function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(toCSV(BLANK_QUESTIONS)).toEqual(`id,name,options,points,published
 1,Question 1,0,1,false
 47,My New Question,0,1,false
@@ -582,9 +690,12 @@ describe("Testing the Question[] functions", () => {
             { questionId: 47, correct: false, text: "", submitted: false },
             { questionId: 2, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(makeAnswers(SIMPLE_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
@@ -592,18 +703,24 @@ describe("Testing the Question[] functions", () => {
             { questionId: 5, correct: false, text: "", submitted: false },
             { questionId: 9, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(makeAnswers(TRIVIA_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
             { questionId: 2, correct: false, text: "", submitted: false },
             { questionId: 3, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(makeAnswers(SIMPLE_QUESTIONS_2)).toEqual([
             { questionId: 478, correct: false, text: "", submitted: false },
@@ -612,9 +729,12 @@ describe("Testing the Question[] functions", () => {
             { questionId: 777, correct: false, text: "", submitted: false },
             { questionId: 1937, correct: false, text: "", submitted: false }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(makeAnswers(EMPTY_QUESTIONS)).toEqual([
             { questionId: 1, correct: false, text: "", submitted: false },
@@ -627,9 +747,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the publishAll function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(publishAll(BLANK_QUESTIONS)).toEqual([
             {
                 id: 1,
@@ -641,9 +764,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -655,9 +781,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -670,9 +799,12 @@ describe("Testing the Question[] functions", () => {
                 published: true
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(publishAll(SIMPLE_QUESTIONS)).toEqual([
             {
@@ -685,9 +817,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -699,9 +834,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -713,9 +851,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 9,
@@ -728,9 +869,12 @@ describe("Testing the Question[] functions", () => {
                 published: true
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(publishAll(TRIVIA_QUESTIONS)).toEqual([
             {
@@ -743,9 +887,12 @@ describe("Testing the Question[] functions", () => {
                 points: 7,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -761,9 +908,12 @@ describe("Testing the Question[] functions", () => {
                 points: 3,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 3,
@@ -780,9 +930,12 @@ describe("Testing the Question[] functions", () => {
                 published: true
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(publishAll(EMPTY_QUESTIONS)).toEqual([
             {
@@ -795,9 +948,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -809,9 +965,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 3,
@@ -823,9 +982,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 4,
@@ -837,9 +999,12 @@ describe("Testing the Question[] functions", () => {
                 points: 5,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -852,18 +1017,24 @@ describe("Testing the Question[] functions", () => {
                 published: true
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(publishAll(SIMPLE_QUESTIONS_2)).toEqual(SIMPLE_QUESTIONS_2);
     });
 
     test("Testing the sameType function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(sameType([])).toEqual(true);
         expect(sameType(BLANK_QUESTIONS)).toEqual(false);
         expect(sameType(SIMPLE_QUESTIONS)).toEqual(false);
@@ -876,9 +1047,12 @@ describe("Testing the Question[] functions", () => {
         expect(
             addNewQuestion([], 142, "A new question", "short_answer_question")
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ).toEqual([NEW_BLANK_QUESTION]);
         expect(
             addNewQuestion(
@@ -888,9 +1062,12 @@ describe("Testing the Question[] functions", () => {
                 "short_answer_question"
             )
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ).toEqual([...BLANK_QUESTIONS, NEW_BLANK_QUESTION]);
         expect(
             addNewQuestion(
@@ -904,9 +1081,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the renameQuestionById function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(renameQuestionById(BLANK_QUESTIONS, 1, "New Name")).toEqual([
             {
                 id: 1,
@@ -918,9 +1098,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -932,9 +1115,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -947,9 +1133,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(renameQuestionById(BLANK_QUESTIONS, 47, "Another Name")).toEqual(
             [
@@ -963,9 +1152,12 @@ describe("Testing the Question[] functions", () => {
                     points: 1,
                     published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
                 },
                 {
                     id: 47,
@@ -977,9 +1169,12 @@ describe("Testing the Question[] functions", () => {
                     points: 1,
                     published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
                 },
                 {
                     id: 2,
@@ -993,9 +1188,12 @@ describe("Testing the Question[] functions", () => {
                 }
             ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         );
         expect(renameQuestionById(SIMPLE_QUESTIONS, 5, "Colours")).toEqual([
             {
@@ -1008,9 +1206,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1022,9 +1223,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -1036,9 +1240,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 9,
@@ -1055,9 +1262,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Test the changeQuestionTypeById function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(
             changeQuestionTypeById(
                 BLANK_QUESTIONS,
@@ -1068,9 +1278,12 @@ describe("Testing the Question[] functions", () => {
         expect(
             changeQuestionTypeById(BLANK_QUESTIONS, 1, "short_answer_question")
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ).toEqual([
             {
                 id: 1,
@@ -1082,9 +1295,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -1096,9 +1312,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1114,9 +1333,12 @@ describe("Testing the Question[] functions", () => {
         expect(
             changeQuestionTypeById(BLANK_QUESTIONS, 47, "short_answer_question")
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ).toEqual([
             {
                 id: 1,
@@ -1128,9 +1350,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -1142,9 +1367,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1160,9 +1388,12 @@ describe("Testing the Question[] functions", () => {
         expect(
             changeQuestionTypeById(TRIVIA_QUESTIONS, 3, "short_answer_question")
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ).toEqual([
             {
                 id: 1,
@@ -1174,9 +1405,12 @@ describe("Testing the Question[] functions", () => {
                 points: 7,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1192,9 +1426,12 @@ describe("Testing the Question[] functions", () => {
                 points: 3,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 3,
@@ -1211,9 +1448,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the addEditQuestionOption function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(editOption(BLANK_QUESTIONS, 1, -1, "NEW OPTION")).toEqual([
             {
                 id: 1,
@@ -1225,9 +1465,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -1239,9 +1482,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1254,9 +1500,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(editOption(BLANK_QUESTIONS, 47, -1, "Another option")).toEqual([
             {
@@ -1269,9 +1518,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -1283,9 +1535,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1298,9 +1553,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(editOption(SIMPLE_QUESTIONS, 5, -1, "newspaper")).toEqual([
             {
@@ -1313,9 +1571,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1327,9 +1588,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -1341,9 +1605,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 9,
@@ -1356,9 +1623,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(editOption(SIMPLE_QUESTIONS, 5, 0, "newspaper")).toEqual([
             {
@@ -1371,9 +1641,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1385,9 +1658,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -1399,9 +1675,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 9,
@@ -1414,9 +1693,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
 
         expect(editOption(SIMPLE_QUESTIONS, 5, 2, "newspaper")).toEqual([
@@ -1430,9 +1712,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1444,9 +1729,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 5,
@@ -1458,9 +1746,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 9,
@@ -1477,9 +1768,12 @@ describe("Testing the Question[] functions", () => {
 
     test("Testing the duplicateQuestionInArray function", () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         expect(duplicateQuestionInArray(BLANK_QUESTIONS, 1, 27)).toEqual([
             {
                 id: 1,
@@ -1491,9 +1785,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 27,
@@ -1505,9 +1802,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -1519,9 +1819,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1534,9 +1837,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(duplicateQuestionInArray(BLANK_QUESTIONS, 47, 19)).toEqual([
             {
@@ -1549,9 +1855,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 47,
@@ -1563,9 +1872,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 19,
@@ -1577,9 +1889,12 @@ describe("Testing the Question[] functions", () => {
                 points: 1,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1592,9 +1907,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
         expect(duplicateQuestionInArray(TRIVIA_QUESTIONS, 3, 111)).toEqual([
             {
@@ -1607,9 +1925,12 @@ describe("Testing the Question[] functions", () => {
                 points: 7,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 2,
@@ -1625,9 +1946,12 @@ describe("Testing the Question[] functions", () => {
                 points: 3,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 3,
@@ -1643,9 +1967,12 @@ describe("Testing the Question[] functions", () => {
                 points: 10,
                 published: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
             },
             {
                 id: 111,
@@ -1662,9 +1989,12 @@ describe("Testing the Question[] functions", () => {
                 published: false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> d1ba68a (answer is revealed)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
         ]);
     });
 

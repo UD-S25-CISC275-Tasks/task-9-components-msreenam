@@ -11,8 +11,11 @@ export function makeBlankQuestion(
     type: QuestionType
 ): Question {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return {};
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: id,
         name: name,
@@ -23,7 +26,10 @@ export function makeBlankQuestion(
         points: 1,
         published: false
     };
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -35,12 +41,18 @@ export function makeBlankQuestion(
  */
 export function isCorrect(question: Question, answer: string): boolean {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return false;
 =======
     return (
         question.expected.toLowerCase().trim() === answer.toLowerCase().trim()
     );
 >>>>>>> 6016326 (counter)
+=======
+    return (
+        question.expected.toLowerCase().trim() === answer.toLowerCase().trim()
+    );
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -51,13 +63,19 @@ export function isCorrect(question: Question, answer: string): boolean {
  */
 export function isValid(question: Question, answer: string): boolean {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return false;
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     if (question.type === "short_answer_question") {
         return true;
     }
     return question.options.includes(answer);
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -68,10 +86,14 @@ export function isValid(question: Question, answer: string): boolean {
  */
 export function toShortForm(question: Question): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return "";
 =======
     return `${question.id}: ${question.name.slice(0, 10)}`;
 >>>>>>> 6016326 (counter)
+=======
+    return `${question.id}: ${question.name.slice(0, 10)}`;
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -93,8 +115,11 @@ export function toShortForm(question: Question): string {
  */
 export function toMarkdown(question: Question): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return "";
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     var answer = `# ${question.name}\n${question.body}`;
 
     if (question.type === "multiple_choice_question") {
@@ -102,7 +127,10 @@ export function toMarkdown(question: Question): string {
             "\n" + question.options.map((option) => `- ${option}`).join("\n");
     }
     return answer;
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -111,10 +139,13 @@ export function toMarkdown(question: Question): string {
  */
 export function renameQuestion(question: Question, newName: string): Question {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return question;
 }
 
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: question.id,
         name: newName,
@@ -126,7 +157,10 @@ export function renameQuestion(question: Question, newName: string): Question {
         published: question.published
     };
 }
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 /**
  * Return a new version of the given question, except the `published` field
  * should be inverted. If the question was not published, now it should be
@@ -134,8 +168,11 @@ export function renameQuestion(question: Question, newName: string): Question {
  */
 export function publishQuestion(question: Question): Question {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return question;
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: question.id,
         name: question.name,
@@ -146,7 +183,10 @@ export function publishQuestion(question: Question): Question {
         points: question.points,
         published: !question.published
     };
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -157,8 +197,11 @@ export function publishQuestion(question: Question): Question {
  */
 export function duplicateQuestion(id: number, oldQuestion: Question): Question {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return oldQuestion;
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: id,
         name: `Copy of ${oldQuestion.name}`,
@@ -169,7 +212,10 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
         points: oldQuestion.points,
         published: false
     };
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -181,8 +227,11 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  */
 export function addOption(question: Question, newOption: string): Question {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return question;
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: question.id,
         name: question.name,
@@ -193,7 +242,10 @@ export function addOption(question: Question, newOption: string): Question {
         points: question.points,
         published: question.published
     };
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -211,8 +263,11 @@ export function mergeQuestion(
     { points }: { points: number }
 ): Question {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return contentQuestion;
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: id,
         name: name,
@@ -223,5 +278,8 @@ export function mergeQuestion(
         points: points,
         published: false
     };
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }

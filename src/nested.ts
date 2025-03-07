@@ -7,10 +7,14 @@ import { Question, QuestionType } from "./interfaces/question";
  */
 export function getPublishedQuestions(questions: Question[]): Question[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return [];
 =======
     return questions.filter((q) => q.published);
 >>>>>>> 6016326 (counter)
+=======
+    return questions.filter((q) => q.published);
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -20,12 +24,18 @@ export function getPublishedQuestions(questions: Question[]): Question[] {
  */
 export function getNonEmptyQuestions(questions: Question[]): Question[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return [];
 =======
     return questions.filter(
         (q) => q.body !== "" || q.expected !== "" || q.options.length > 0,
     );
 >>>>>>> 6016326 (counter)
+=======
+    return questions.filter(
+        (q) => q.body !== "" || q.expected !== "" || q.options.length > 0,
+    );
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -35,6 +45,7 @@ export function getNonEmptyQuestions(questions: Question[]): Question[] {
 export function findQuestion(
     questions: Question[],
 <<<<<<< HEAD
+<<<<<<< HEAD
     id: number
 ): Question | null {
     return null;
@@ -43,6 +54,11 @@ export function findQuestion(
 ): Question | null {
     return questions.find((q) => q.id === id) || null;
 >>>>>>> 6016326 (counter)
+=======
+    id: number,
+): Question | null {
+    return questions.find((q) => q.id === id) || null;
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -51,10 +67,14 @@ export function findQuestion(
  */
 export function removeQuestion(questions: Question[], id: number): Question[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return [];
 =======
     return questions.filter((q) => q.id !== id);
 >>>>>>> 6016326 (counter)
+=======
+    return questions.filter((q) => q.id !== id);
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -63,10 +83,14 @@ export function removeQuestion(questions: Question[], id: number): Question[] {
  */
 export function getNames(questions: Question[]): string[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return [];
 =======
     return questions.map((q) => q.name);
 >>>>>>> 6016326 (counter)
+=======
+    return questions.map((q) => q.name);
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -74,10 +98,14 @@ export function getNames(questions: Question[]): string[] {
  */
 export function sumPoints(questions: Question[]): number {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return 0;
 =======
     return questions.reduce((sum, q) => sum + q.points, 0);
 >>>>>>> 6016326 (counter)
+=======
+    return questions.reduce((sum, q) => sum + q.points, 0);
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -85,12 +113,18 @@ export function sumPoints(questions: Question[]): number {
  */
 export function sumPublishedPoints(questions: Question[]): number {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return 0;
 =======
     return questions
         .filter((q) => q.published)
         .reduce((sum, q) => sum + q.points, 0);
 >>>>>>> 6016326 (counter)
+=======
+    return questions
+        .filter((q) => q.published)
+        .reduce((sum, q) => sum + q.points, 0);
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -112,15 +146,21 @@ id,name,options,points,published
  */
 export function toCSV(questions: Question[]): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return "";
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     const header = "id,name,options,points,published";
     const rows = questions.map(
         (q) =>
             `${q.id},${q.name},${q.options.length},${q.points},${q.published}`,
     );
     return [header, ...rows].join("\n");
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -130,15 +170,21 @@ export function toCSV(questions: Question[]): string {
  */
 export function makeAnswers(questions: Question[]): Answer[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return [];
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return questions.map((q) => ({
         questionId: q.id,
         text: "",
         submitted: false,
         correct: false,
     }));
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -147,10 +193,14 @@ export function makeAnswers(questions: Question[]): Answer[] {
  */
 export function publishAll(questions: Question[]): Question[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return [];
 =======
     return questions.map((q) => ({ ...q, published: true }));
 >>>>>>> 6016326 (counter)
+=======
+    return questions.map((q) => ({ ...q, published: true }));
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -159,10 +209,14 @@ export function publishAll(questions: Question[]): Question[] {
  */
 export function sameType(questions: Question[]): boolean {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return false;
 =======
     return questions.every((q) => q.type === questions[0]?.type);
 >>>>>>> 6016326 (counter)
+=======
+    return questions.every((q) => q.type === questions[0]?.type);
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -175,10 +229,13 @@ export function addNewQuestion(
     id: number,
     name: string,
 <<<<<<< HEAD
+<<<<<<< HEAD
     type: QuestionType
 ): Question[] {
     return [];
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     type: QuestionType,
 ): Question[] {
     const newQuestion = {
@@ -192,7 +249,10 @@ export function addNewQuestion(
         published: false,
     };
     return [...questions, newQuestion];
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -204,16 +264,22 @@ export function renameQuestionById(
     questions: Question[],
     targetId: number,
 <<<<<<< HEAD
+<<<<<<< HEAD
     newName: string
 ): Question[] {
     return [];
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     newName: string,
 ): Question[] {
     return questions.map((q) =>
         q.id === targetId ? { ...q, name: newName } : q,
     );
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -227,10 +293,13 @@ export function changeQuestionTypeById(
     questions: Question[],
     targetId: number,
 <<<<<<< HEAD
+<<<<<<< HEAD
     newQuestionType: QuestionType
 ): Question[] {
     return [];
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     newQuestionType: QuestionType,
 ): Question[] {
     return questions.map((q) =>
@@ -245,7 +314,10 @@ export function changeQuestionTypeById(
             }
         :   q,
     );
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -263,10 +335,13 @@ export function editOption(
     targetId: number,
     targetOptionIndex: number,
 <<<<<<< HEAD
+<<<<<<< HEAD
     newOption: string
 ) {
     return [];
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     newOption: string,
 ): Question[] {
     return questions.map((q) =>
@@ -282,7 +357,10 @@ export function editOption(
             }
         :   q,
     );
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /***
@@ -295,10 +373,13 @@ export function duplicateQuestionInArray(
     questions: Question[],
     targetId: number,
 <<<<<<< HEAD
+<<<<<<< HEAD
     newId: number
 ): Question[] {
     return [];
 =======
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     newId: number,
 ): Question[] {
     const index = questions.findIndex((q) => q.id === targetId);
@@ -313,5 +394,8 @@ export function duplicateQuestionInArray(
                 ...questions.slice(index + 1),
             ]
         );
+<<<<<<< HEAD
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
