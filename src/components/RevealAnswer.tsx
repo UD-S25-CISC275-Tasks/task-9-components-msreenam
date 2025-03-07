@@ -3,6 +3,9 @@ import { Button } from "react-bootstrap";
 
 export function RevealAnswer(): React.JSX.Element {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d1ba68a (answer is revealed)
     const [visible, setVisible] = useState<boolean>(false);
 
     return (
@@ -17,7 +20,10 @@ export function RevealAnswer(): React.JSX.Element {
             {visible && <div>42</div>}
         </div>
     );
+<<<<<<< HEAD
 =======
     return <div>Reveal Answer</div>;
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+>>>>>>> d1ba68a (answer is revealed)
 }
