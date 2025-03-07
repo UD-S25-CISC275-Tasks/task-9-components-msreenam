@@ -8,14 +8,8 @@ import { Question, QuestionType } from "./interfaces/question";
 export function makeBlankQuestion(
     id: number,
     name: string,
-    type: QuestionType
+    type: QuestionType,
 ): Question {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return {};
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: id,
         name: name,
@@ -24,12 +18,8 @@ export function makeBlankQuestion(
         options: [],
         expected: "",
         points: 1,
-        published: false
+        published: false,
     };
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -40,19 +30,9 @@ export function makeBlankQuestion(
  * HINT: Look up the `trim` and `toLowerCase` functions.
  */
 export function isCorrect(question: Question, answer: string): boolean {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return false;
-=======
     return (
         question.expected.toLowerCase().trim() === answer.toLowerCase().trim()
     );
->>>>>>> 6016326 (counter)
-=======
-    return (
-        question.expected.toLowerCase().trim() === answer.toLowerCase().trim()
-    );
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -62,20 +42,10 @@ export function isCorrect(question: Question, answer: string): boolean {
  * be exactly one of the options.
  */
 export function isValid(question: Question, answer: string): boolean {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return false;
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     if (question.type === "short_answer_question") {
         return true;
     }
     return question.options.includes(answer);
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -85,15 +55,7 @@ export function isValid(question: Question, answer: string): boolean {
  * name "My First Question" would become "9: My First Q".
  */
 export function toShortForm(question: Question): string {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return "";
-=======
     return `${question.id}: ${question.name.slice(0, 10)}`;
->>>>>>> 6016326 (counter)
-=======
-    return `${question.id}: ${question.name.slice(0, 10)}`;
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -114,12 +76,6 @@ export function toShortForm(question: Question): string {
  * Check the unit tests for more examples of what this looks like!
  */
 export function toMarkdown(question: Question): string {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return "";
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     var answer = `# ${question.name}\n${question.body}`;
 
     if (question.type === "multiple_choice_question") {
@@ -127,10 +83,6 @@ export function toMarkdown(question: Question): string {
             "\n" + question.options.map((option) => `- ${option}`).join("\n");
     }
     return answer;
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -138,14 +90,6 @@ export function toMarkdown(question: Question): string {
  * `newName`.
  */
 export function renameQuestion(question: Question, newName: string): Question {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return question;
-}
-
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: question.id,
         name: newName,
@@ -154,25 +98,15 @@ export function renameQuestion(question: Question, newName: string): Question {
         options: question.options,
         expected: question.expected,
         points: question.points,
-        published: question.published
+        published: question.published,
     };
 }
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 /**
  * Return a new version of the given question, except the `published` field
  * should be inverted. If the question was not published, now it should be
  * published; if it was published, now it should be not published.
  */
 export function publishQuestion(question: Question): Question {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return question;
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: question.id,
         name: question.name,
@@ -181,12 +115,8 @@ export function publishQuestion(question: Question): Question {
         options: question.options,
         expected: question.expected,
         points: question.points,
-        published: !question.published
+        published: !question.published,
     };
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -196,12 +126,6 @@ export function publishQuestion(question: Question): Question {
  * The `published` field should be reset to false.
  */
 export function duplicateQuestion(id: number, oldQuestion: Question): Question {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return oldQuestion;
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: id,
         name: `Copy of ${oldQuestion.name}`,
@@ -210,12 +134,8 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
         options: oldQuestion.options,
         expected: oldQuestion.expected,
         points: oldQuestion.points,
-        published: false
+        published: false,
     };
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -226,12 +146,6 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  * Check out the subsection about "Nested Fields" for more information.
  */
 export function addOption(question: Question, newOption: string): Question {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return question;
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: question.id,
         name: question.name,
@@ -240,12 +154,8 @@ export function addOption(question: Question, newOption: string): Question {
         options: [...question.options, newOption],
         expected: question.expected,
         points: question.points,
-        published: question.published
+        published: question.published,
     };
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
 
 /**
@@ -260,14 +170,8 @@ export function mergeQuestion(
     id: number,
     name: string,
     contentQuestion: Question,
-    { points }: { points: number }
+    { points }: { points: number },
 ): Question {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return contentQuestion;
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
     return {
         id: id,
         name: name,
@@ -276,10 +180,6 @@ export function mergeQuestion(
         options: [...contentQuestion.options],
         expected: contentQuestion.expected,
         points: points,
-        published: false
+        published: false,
     };
-<<<<<<< HEAD
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
 }
