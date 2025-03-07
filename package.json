@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> f534913 (please)
 {
     "name": "react-typescript-starter",
     "homepage": "homepage",
@@ -7,6 +10,9 @@
     "dependencies": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f534913 (please)
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/user-event": "^13.5.0",
         "@types/jest": "^27.5.2",
@@ -16,6 +22,7 @@
         "react-dom": "^18.3.1",
         "react-scripts": "5.0.1",
         "typescript": "^4.9.5",
+<<<<<<< HEAD
 =======
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
@@ -36,6 +43,8 @@
         "react-scripts": "5.0.1",
         "typescript": "^4.9.5",
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> f534913 (please)
         "web-vitals": "^2.1.4"
     },
     "scripts": {
@@ -43,12 +52,16 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "test:cov": "react-scripts test --coverage --watchAll",
+<<<<<<< HEAD
         "test:json": "react-scripts test --json --watchAll=false --outputFile jest-output.json --coverage",
+=======
+>>>>>>> f534913 (please)
         "eject": "react-scripts eject",
 <<<<<<< HEAD
 <<<<<<< HEAD
         "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
         "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
+<<<<<<< HEAD
 =======
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
@@ -58,6 +71,8 @@
         "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
         "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> f534913 (please)
         "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}"
     },
     "eslintConfig": {
@@ -82,8 +97,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> f534913 (please)
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@babel/plugin-transform-private-property-in-object": "^7.24.7",
         "@testing-library/dom": "^10.4.0",
@@ -105,6 +123,7 @@
         "ts-jest": "^29.2.4",
         "ts-node": "^10.9.2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
         "@types/react": "^19.0.10",
@@ -122,6 +141,8 @@
 >>>>>>> 2f2ff1b (Initialize task-state)
 =======
 >>>>>>> 6016326 (counter)
+=======
+>>>>>>> f534913 (please)
     },
     "jest": {
         "collectCoverageFrom": [
@@ -133,7 +154,11 @@
         ]
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 2f2ff1b (Initialize task-state)
+=======
+}
+>>>>>>> f534913 (please)
