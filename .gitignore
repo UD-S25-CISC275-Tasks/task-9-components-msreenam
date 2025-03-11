@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 build/
 
 # Logs
@@ -135,9 +134,7 @@ package-lock.json
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-=======
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -161,7 +158,4 @@ package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
+

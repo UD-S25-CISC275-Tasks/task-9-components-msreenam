@@ -1,15 +1,9 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-<<<<<<< HEAD
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-=======
-<<<<<<< HEAD
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> origin/task-state
->>>>>>> 89be9a04ef1a0f8d102e6772d07cdacfe677b9c3
+
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true
 }
