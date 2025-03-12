@@ -3,11 +3,6 @@ import { Button } from "react-bootstrap";
 import { QuestionType } from "../interfaces/question";
 
 export function ChangeType(): React.JSX.Element {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 89be9a0 (finish this)
     const [type, setType] = useState<QuestionType>("short_answer_question");
 
     const changeType = () => {
@@ -26,13 +21,4 @@ export function ChangeType(): React.JSX.Element {
                 : "Short Answer"}
         </div>
     );
-<<<<<<< HEAD
-=======
-    return <div>Change Type</div>;
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 89be9a0 (finish this)
-=======
-    return <div>Change Type</div>;
->>>>>>> 1509083 (Initialize task-components)
 }
