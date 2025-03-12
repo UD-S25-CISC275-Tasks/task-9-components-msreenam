@@ -19,6 +19,13 @@ import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+>>>>>>> 05fbfa4 (finish broken components, all tests passing)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -68,8 +75,12 @@ function App(): React.JSX.Element {
             </header>
             <hr></hr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             {/* <DoubleHalf></DoubleHalf> */}
+=======
+            <DoubleHalf></DoubleHalf>
+>>>>>>> 05fbfa4 (finish broken components, all tests passing)
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
@@ -77,7 +88,10 @@ function App(): React.JSX.Element {
             <hr></hr>
             <ShoveBox></ShoveBox>
             <hr></hr>
+<<<<<<< HEAD
 >>>>>>> 1509083 (Initialize task-components)
+=======
+>>>>>>> 05fbfa4 (finish broken components, all tests passing)
             <Counter></Counter>
             <hr />
             <RevealAnswer></RevealAnswer>
