@@ -6,20 +6,7 @@ import { Question, QuestionType } from "./interfaces/question";
  * that are `published`.
  */
 export function getPublishedQuestions(questions: Question[]): Question[] {
-<<<<<<< HEAD
     return questions.filter((q) => q.published);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /**
@@ -28,22 +15,9 @@ export function getPublishedQuestions(questions: Question[]): Question[] {
  * `expected`, and an empty array for its `options`.
  */
 export function getNonEmptyQuestions(questions: Question[]): Question[] {
-<<<<<<< HEAD
     return questions.filter(
         (q) => q.body !== "" || q.expected !== "" || q.options.length > 0,
     );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -52,26 +26,9 @@ export function getNonEmptyQuestions(questions: Question[]): Question[] {
  */
 export function findQuestion(
     questions: Question[],
-<<<<<<< HEAD
     id: number,
 ): Question | null {
     return questions.find((q) => q.id === id) || null;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    id: number
-): Question | null {
-    return null;
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    id: number
-): Question | null {
-    return null;
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /**
@@ -79,20 +36,7 @@ export function findQuestion(
  * with the given `id`.
  */
 export function removeQuestion(questions: Question[], id: number): Question[] {
-<<<<<<< HEAD
     return questions.filter((q) => q.id !== id);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -100,62 +44,23 @@ export function removeQuestion(questions: Question[], id: number): Question[] {
  * questions, as an array.
  */
 export function getNames(questions: Question[]): string[] {
-<<<<<<< HEAD
     return questions.map((q) => q.name);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
  * Consumes an array of questions and returns the sum total of all their points added together.
  */
 export function sumPoints(questions: Question[]): number {
-<<<<<<< HEAD
     return questions.reduce((sum, q) => sum + q.points, 0);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return 0;
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return 0;
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
  * Consumes an array of questions and returns the sum total of the PUBLISHED questions.
  */
 export function sumPublishedPoints(questions: Question[]): number {
-<<<<<<< HEAD
     return questions
         .filter((q) => q.published)
         .reduce((sum, q) => sum + q.points, 0);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return 0;
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return 0;
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -176,25 +81,12 @@ id,name,options,points,published
  * Check the unit tests for more examples!
  */
 export function toCSV(questions: Question[]): string {
-<<<<<<< HEAD
     const header = "id,name,options,points,published";
     const rows = questions.map(
         (q) =>
             `${q.id},${q.name},${q.options.length},${q.points},${q.published}`,
     );
     return [header, ...rows].join("\n");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return "";
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return "";
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /**
@@ -203,25 +95,12 @@ export function toCSV(questions: Question[]): string {
  * making the `text` an empty string, and using false for both `submitted` and `correct`.
  */
 export function makeAnswers(questions: Question[]): Answer[] {
-<<<<<<< HEAD
     return questions.map((q) => ({
         questionId: q.id,
         text: "",
         submitted: false,
         correct: false,
     }));
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -229,20 +108,7 @@ export function makeAnswers(questions: Question[]): Answer[] {
  * each question is now published, regardless of its previous published status.
  */
 export function publishAll(questions: Question[]): Question[] {
-<<<<<<< HEAD
     return questions.map((q) => ({ ...q, published: true }));
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -250,20 +116,7 @@ export function publishAll(questions: Question[]): Question[] {
  * are the same type. They can be any type, as long as they are all the SAME type.
  */
 export function sameType(questions: Question[]): boolean {
-<<<<<<< HEAD
     return questions.every((q) => q.type === questions[0]?.type);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return false;
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    return false;
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -275,7 +128,6 @@ export function addNewQuestion(
     questions: Question[],
     id: number,
     name: string,
-<<<<<<< HEAD
     type: QuestionType,
 ): Question[] {
     const newQuestion = {
@@ -289,22 +141,6 @@ export function addNewQuestion(
         published: false,
     };
     return [...questions, newQuestion];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    type: QuestionType
-): Question[] {
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    type: QuestionType
-): Question[] {
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -315,28 +151,11 @@ export function addNewQuestion(
 export function renameQuestionById(
     questions: Question[],
     targetId: number,
-<<<<<<< HEAD
     newName: string,
 ): Question[] {
     return questions.map((q) =>
         q.id === targetId ? { ...q, name: newName } : q,
     );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    newName: string
-): Question[] {
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    newName: string
-): Question[] {
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -349,7 +168,6 @@ export function renameQuestionById(
 export function changeQuestionTypeById(
     questions: Question[],
     targetId: number,
-<<<<<<< HEAD
     newQuestionType: QuestionType,
 ): Question[] {
     return questions.map((q) =>
@@ -364,22 +182,6 @@ export function changeQuestionTypeById(
             }
         :   q,
     );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    newQuestionType: QuestionType
-): Question[] {
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    newQuestionType: QuestionType
-): Question[] {
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /**
@@ -396,7 +198,6 @@ export function editOption(
     questions: Question[],
     targetId: number,
     targetOptionIndex: number,
-<<<<<<< HEAD
     newOption: string,
 ): Question[] {
     return questions.map((q) =>
@@ -412,22 +213,6 @@ export function editOption(
             }
         :   q,
     );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    newOption: string
-) {
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    newOption: string
-) {
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
 
 /***
@@ -439,7 +224,6 @@ export function editOption(
 export function duplicateQuestionInArray(
     questions: Question[],
     targetId: number,
-<<<<<<< HEAD
     newId: number,
 ): Question[] {
     const index = questions.findIndex((q) => q.id === targetId);
@@ -454,20 +238,4 @@ export function duplicateQuestionInArray(
                 ...questions.slice(index + 1),
             ]
         );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    newId: number
-): Question[] {
-    return [];
->>>>>>> 2f2ff1b (Initialize task-state)
-=======
->>>>>>> 6016326 (counter)
-=======
->>>>>>> 95334ef (cojmit)
-=======
-    newId: number
-): Question[] {
-    return [];
->>>>>>> 1509083 (Initialize task-components)
 }
